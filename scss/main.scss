@@ -69,8 +69,23 @@ $base-padding: 80px;
 }
 
 #slider{
-    width: 100%; height: 80vh;
-    background-image: url(../img/slider.png);
+    width: 100%; height: 83vh;
+    position:relative;
+    background: linear-gradient(#a7a39a 60.5%,#9f9a8f 0);
+
+    &-1{
+        width:18vw;
+        position:absolute; left: 20%; top:35%;
+    }
+    &-2{
+        width: 38vw;
+        position:absolute; left: 50%; top:13%;
+    }
+    &-3{
+        width:10vw;
+        position:absolute; left: 20%; top:92%;
+        opacity:0;
+    }
 }
 
 .section{
@@ -583,7 +598,6 @@ $base-padding: 80px;
             h1{
                 font-size:2.6vw; font-family: 'Pretendard-Regular'; font-weight: bold;
                 color: $base-color;
-                opacity:0;
                 padding-top: $base-font-padding;
             }
             h2{

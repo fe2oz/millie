@@ -36,7 +36,11 @@
         </div>
     </header>
 
-    <div id="slider"></div>
+    <div id="slider">
+        <img id="slider-1" src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/intro-title-v2.f2e968c3d93c483c7668aab0e9179ffe.png" alt="">
+        <img id="slider-2" src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/intro-model-pc.368551fc2d9669396e149eda653560b1.png" alt="">
+        <img id="slider-3" src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/intro-subtext.c6557c6408753a2d3a71ce2243232fa4.png" alt="">
+    </div>
 
     <div class="section">
         <div class="section-one">
@@ -330,6 +334,27 @@
                 </div>
             </div>
         </div>
+
+        <div class="section-nine">
+            <div class="section-nine-select">
+                <nav>
+                    <ul>
+                        <li>
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-border.40db36887379dbd5eee2bc4f75aa875f.png" alt="">
+                            오디오북
+                        </li>
+                        <li>
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/viewer-border.dcd3ac6fb82f44757ef93aa7253bf115.png" alt="">
+                            밀리 뷰어
+                        </li>
+                        <li>
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/today-border.54bab35f41c275a0f31b94ff657995d0.png" alt="">
+                            투데이
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -409,23 +434,55 @@
                 duration:1,
                 scrollTrigger: {
                     trigger: "#gp6",
-                    scrub: 1,
+                }
+            });
+
+        const tl10 = gsap.timeline();
+            tl10.to("#slider-1", 1.1,{
+                y:-130,
+                duration:1,
+                scrollTrigger: {
+                    trigger: "#slider-1",
+                }
+            });
+        const tl11 = gsap.timeline();
+            tl11.to("#slider-3", 1.1,{
+                y:-50,
+                duration:1,
+                delay:0.5,
+                opacity:1,
+                scrollTrigger: {
+                    trigger: "#slider-3",
                 }
             });
     </script>
 
     <script>
         $(document).ready(function(){
-            $(window).scroll(function (){
-                if($("#header").scrollTop > 100){
-                    $("#header").css("backgroundColor", "white");
-                }
-            });
-
             $("#sfmb li").click(function(){
                 $("#sfmb li").removeClass("active");
                 $(this).addClass("active");
             });
+
+            var scroll_pos = 0;
+            $(document).scroll(function(){
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 800){
+                    $("#header").css("background-color", "rgba(255, 255, 255, 0.8)");
+                    $("#header").css("border-bottom", "1px solid #242424");
+                    $(".right-menu nav ul li").css("color", "black");
+                    $(".right-menu nav ul li:nth-of-type(2)").css("background-color", "#242424");
+                    $(".right-menu nav ul li:nth-of-type(2)").css("color", "#fff");
+                    $(".left-menu img").css("filter", "invert(1)");
+                }else{
+                    $("#header").css("background-color", "#a7a39a");
+                    $("#header").css("border-bottom", "1px solid #fff");
+                    $(".right-menu nav ul li").css("color", "#fff");
+                    $(".right-menu nav ul li:nth-of-type(2)").css("background-color", "#ffeb60");
+                    $(".right-menu nav ul li:nth-of-type(2)").css("color", "#242424");
+                    $(".left-menu img").css("filter", "invert(0)");
+                }
+            })
         });
         
     </script>

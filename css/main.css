@@ -97,8 +97,32 @@ body {
 
 #slider {
   width: 100%;
-  height: 80vh;
-  background-image: url(../img/slider.png);
+  height: 83vh;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.5%, #a7a39a), color-stop(0, #9f9a8f));
+  background: linear-gradient(#a7a39a 60.5%, #9f9a8f 0);
+}
+
+#slider-1 {
+  width: 18vw;
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+
+#slider-2 {
+  width: 38vw;
+  position: absolute;
+  left: 50%;
+  top: 13%;
+}
+
+#slider-3 {
+  width: 10vw;
+  position: absolute;
+  left: 20%;
+  top: 92%;
+  opacity: 0;
 }
 
 .section {
@@ -932,7 +956,6 @@ body {
   font-family: 'Pretendard-Regular';
   font-weight: bold;
   color: #242424;
-  opacity: 0;
   padding-top: 30px;
 }
 
