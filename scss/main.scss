@@ -15,6 +15,10 @@ ul, li, ol{
     font-style: normal;
 }
 
+body{
+    overflow-x : hidden;
+}
+
 $base-background: #a7a39a;
 $base-color: #242424;
 $base-min-color: #555;
@@ -171,7 +175,7 @@ $base-padding: 80px;
         &-text{
             width: 100%; height: auto;
             text-align: center;
-            padding-top: $base-padding;
+            padding-top: $base-padding + 30px;
 
             h1{
                 font-size:2.6vw; font-family: 'Pretendard-Regular'; font-weight: bold;
@@ -192,7 +196,7 @@ $base-padding: 80px;
                 font-size:1.2vw; font-family: 'Pretendard-Regular'; font-weight: bold;
                 color: $base-color;
                 padding-bottom: $base-font-padding + 20px;
-                padding-left: $base-padding + 80px;
+                padding-left: $base-padding + 60px;
             }
             img{
                 width: 8vw;
@@ -243,7 +247,7 @@ $base-padding: 80px;
                 font-size:1.2vw; font-family: 'Pretendard-Regular'; font-weight: bold;
                 color: $base-color;
                 padding-bottom: $base-font-padding + 20px;
-                padding-left: $base-padding + 80px;
+                padding-left: $base-padding + 60px;
             }
             img{
                 width: 8vw;
@@ -295,7 +299,7 @@ $base-padding: 80px;
                 font-size:1.2vw; font-family: 'Pretendard-Regular'; font-weight: bold;
                 color: $base-color;
                 padding-bottom: $base-font-padding + 20px;
-                padding-left: $base-padding + 80px;
+                padding-left: $base-padding + 60px;
             }
             img{
                 width: 8vw;
@@ -346,7 +350,7 @@ $base-padding: 80px;
                 font-size:1.2vw; font-family: 'Pretendard-Regular'; font-weight: bold;
                 color: $base-color;
                 padding-bottom: $base-font-padding + 20px;
-                padding-left: $base-padding + 80px;
+                padding-left: $base-padding + 60px;
             }
             img{
                 width: 8vw;
@@ -387,14 +391,14 @@ $base-padding: 80px;
                 }
             }
         }  ///////////////////////////
-    }
+    };
 
     &-four{
         width:100%; height: 175px;
         background-image: url(../img/slider2.png);
         background-size: cover;
         margin-top: $base-padding + $base-font-padding;
-    }
+    };
 
     &-five{
         width:100%; height: auto;
@@ -415,5 +419,91 @@ $base-padding: 80px;
                 line-height: 3.5vh;
             }
         }
-    }
+
+        &-more{
+            width: 100%; height: auto;
+
+            &-button{
+                width: 80%; height: auto;
+                display: flex;
+                margin:0 auto;
+                
+                nav{
+                    width:100%;
+                    padding-left: $base-padding + 60px;
+                }
+
+                #sfmb{
+                    width: 100%;
+                    display: flex; flex-flow: row wrap;
+                }
+                
+                .active{
+                    background-color: $base-color;
+                    color: #fff;
+                }
+                li{
+                    height: 3.5vh;
+                    border: 1px solid $base-color; border-radius: 20px;
+                    font-size: 0.7vw; font-family: 'Pretendard-Regular';
+                    margin-right: 1%;
+                    line-height: 3.5vh;
+                    padding: 0 15px 0 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-book{
+            width: 80%; height: auto;
+            margin: 0 auto;
+            margin-top: $base-font-padding;
+            position:relative;
+
+            .sfb1,
+            .sfb2,
+            .sfb3,
+            .sfb4,
+            .sfb5{
+                display: flex; justify-content: center;
+
+                &-1,
+                &-2,
+                &-3,
+                &-4,
+                &-5,
+                &-6,
+                &-7{
+                    width: 12%; height: 30vh;
+                    display: flex; flex-flow: column; align-items: center;
+    
+                    h2{
+                        width: 90%;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-size: 0.9vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                        color: $base-color;
+                        padding-top: 10px;
+                    }
+                    h3{
+                        width: 90%;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-size: 0.8vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                        color: #6f6f6f;
+                        padding-top: 5px;
+                    }
+                    img{
+                        width: 8vw;
+                        box-shadow: 4px 4px 8px rgba(221, 221, 221, 0.5);
+                    }
+                }
+                &:not(:first-child){
+                    display:none;
+                }
+            }
+        }
+    };
 }

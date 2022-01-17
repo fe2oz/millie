@@ -18,6 +18,7 @@
     <script src="js/stb2.js"></script>
     <script src="js/stb3.js"></script>
     <script src="js/stb4.js"></script>
+    <script src="js/sfb1.js"></script>
 </head>
 <body>
     <header id="header">
@@ -172,6 +173,72 @@
                     인기 분야 책들을 확인해보세요
                 </h2>
             </div>
+
+            <div class="section-five-more">
+                <div class="section-five-more-button">
+                    <nav>
+                        <ul id="sfmb">
+                            <li class="active">주식</li>
+                            <li>영어</li>
+                            <li>고전</li>
+                            <li>인테리어</li>
+                            <li>다이어트</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="section-five-book">
+                <div class="sfb1">
+                    <div class="sfb1-1"></div>
+                    <div class="sfb1-2"></div>
+                    <div class="sfb1-3"></div>
+                    <div class="sfb1-4"></div>
+                    <div class="sfb1-5"></div>
+                    <div class="sfb1-6"></div>
+                    <div class="sfb1-7"></div>
+                </div>
+
+                <div class="sfb2">
+                    <div class="sfb2-1"></div>
+                    <div class="sfb2-2"></div>
+                    <div class="sfb2-3"></div>
+                    <div class="sfb2-4"></div>
+                    <div class="sfb2-5"></div>
+                    <div class="sfb2-6"></div>
+                    <div class="sfb2-7"></div>
+                </div>
+
+                <div class="sfb3">
+                    <div class="sfb3-1"></div>
+                    <div class="sfb3-2"></div>
+                    <div class="sfb3-3"></div>
+                    <div class="sfb3-4"></div>
+                    <div class="sfb3-5"></div>
+                    <div class="sfb3-6"></div>
+                    <div class="sfb3-7"></div>
+                </div>
+
+                <div class="sfb4">
+                    <div class="sfb4-1"></div>
+                    <div class="sfb4-2"></div>
+                    <div class="sfb4-3"></div>
+                    <div class="sfb4-4"></div>
+                    <div class="sfb4-5"></div>
+                    <div class="sfb4-6"></div>
+                    <div class="sfb4-7"></div>
+                </div>
+
+                <div class="sfb5">
+                    <div class="sfb5-1"></div>
+                    <div class="sfb5-2"></div>
+                    <div class="sfb5-3"></div>
+                    <div class="sfb5-4"></div>
+                    <div class="sfb5-5"></div>
+                    <div class="sfb5-6"></div>
+                    <div class="sfb5-7"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -203,7 +270,15 @@
                     $("#header").css("backgroundColor", "white");
                 }
             });
-        })
+
+            $("#sfmb li").click(function(){
+                $("#sfmb li").removeClass("active");
+                $(this).addClass("active");
+            });
+
+
+           
+        });
         
     </script>
 
