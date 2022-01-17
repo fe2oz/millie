@@ -506,4 +506,37 @@ $base-padding: 80px;
             }
         }
     };
+
+    &-six{
+        width: 100%; height: auto;
+        background-color: #f7f7f7;
+        position:relative;
+
+        &-text{
+            width: 100%; height: auto;
+            text-align: center;
+            padding-top: $base-padding;
+
+            h1{
+                font-size:2.6vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                color: $base-color;
+            }
+            h2{
+                font-size:1.25vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                color: #555;
+                padding-top: $base-font-padding; padding-bottom:$base-padding;
+                line-height: 3.5vh;
+            }
+        }
+
+        &-image-1{
+            position:relative; left: 40%;
+        }
+        &-image-2{
+            width: 23vw;
+            position:absolute; left: 38%; top:70%;
+            box-shadow: 4px 4px 8px rgba(221, 221, 221, 0.5),
+            -4px -4px 8px rgba(221, 221, 221, 0.5);
+        }
+    }
 }

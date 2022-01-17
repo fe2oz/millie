@@ -826,3 +826,48 @@ body {
 .section-five-book .sfb5:not(:first-child) {
   display: none;
 }
+
+.section-six {
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.section-six-text {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.section-six-text h1 {
+  font-size: 2.6vw;
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+  color: #242424;
+}
+
+.section-six-text h2 {
+  font-size: 1.25vw;
+  font-family: 'Pretendard-Regular';
+  font-weight: normal;
+  color: #555;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  line-height: 3.5vh;
+}
+
+.section-six-image-1 {
+  position: relative;
+  left: 40%;
+}
+
+.section-six-image-2 {
+  width: 23vw;
+  position: absolute;
+  left: 38%;
+  top: 70%;
+  -webkit-box-shadow: 4px 4px 8px rgba(221, 221, 221, 0.5), -4px -4px 8px rgba(221, 221, 221, 0.5);
+          box-shadow: 4px 4px 8px rgba(221, 221, 221, 0.5), -4px -4px 8px rgba(221, 221, 221, 0.5);
+}
