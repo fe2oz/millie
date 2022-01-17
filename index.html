@@ -438,9 +438,11 @@
             });
 
         const tl10 = gsap.timeline();
-            tl10.to("#slider-1", 1.1,{
+            tl10.to("#slider-1", {
                 y:-130,
                 duration:1,
+                delay: 0.5,
+                opacity:1,
                 scrollTrigger: {
                     trigger: "#slider-1",
                 }
@@ -449,7 +451,7 @@
             tl11.to("#slider-3", 1.1,{
                 y:-50,
                 duration:1,
-                delay:0.5,
+                delay:1,
                 opacity:1,
                 scrollTrigger: {
                     trigger: "#slider-3",

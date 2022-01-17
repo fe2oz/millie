@@ -108,6 +108,7 @@ body {
   position: absolute;
   left: 20%;
   top: 35%;
+  opacity: 0;
 }
 
 #slider-2 {
