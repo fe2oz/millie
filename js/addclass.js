@@ -14,5 +14,13 @@ $(document).ready(function(){
         $(this).addClass("active3");
     });
 
-    
+    $("#snmt2 li").click(function(){
+        $("#snmt2 li").removeClass("active4");
+        $(this).addClass("active4");
+    });
+
+    $("#snmt3 li").click(function(){
+        $("#snmt3 li").removeClass("active5");
+        $(this).addClass("active5");
+    });
 });

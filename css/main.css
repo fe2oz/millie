@@ -1242,7 +1242,13 @@ body {
   margin-top: 30px;
 }
 
-.section-nine-more1-text .active3, .section-nine-more2-text .active3, .section-nine-more3-text .active3 {
+.section-nine-more1-text .active3,
+.section-nine-more1-text .active4,
+.section-nine-more1-text .active5, .section-nine-more2-text .active3,
+.section-nine-more2-text .active4,
+.section-nine-more2-text .active5, .section-nine-more3-text .active3,
+.section-nine-more3-text .active4,
+.section-nine-more3-text .active5 {
   background-color: #242424;
   color: #fff;
 }
