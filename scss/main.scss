@@ -8,6 +8,10 @@ ul, li, ol{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -684,6 +688,282 @@ $base-padding: 80px;
                     background-color: #fff;
                     position:absolute; left:5%;
                 }
+            }
+        }
+    }
+
+    &-nine{
+        width: 100%; height: auto;
+
+        &-select{
+            width: 100%; height: auto;
+
+            .sns1{
+                display: flex; justify-content: center;
+
+                li{
+                    width: 384.67px; height: 105.19px;
+                    display: flex; align-items: center; justify-content: center; flex-flow:column;
+                    text-align: center;
+                    cursor: pointer;
+
+                    img{
+                        width: 1.3vw;
+                    }
+                }
+            }
+            
+            .active2{
+                background-color: #f7f7f7;
+            }
+        }
+        
+        &-more1,
+        &-more2,
+        &-more3{
+            width: 100%; height: 110vh;
+            background-color: #f7f7f7;
+            position: relative;
+            display: flex; flex-flow: column wrap; justify-content: center; align-content: center;
+
+            &-text{
+                width: 40%; height: 100%;
+                padding-left: $base-font-padding + 10px;
+
+                img{
+                    width: 2.5vw;
+                    padding-top: $base-padding;
+                }
+
+                h1{
+                    font-size:2.6vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                    color: $base-color;
+                    padding-top: 20px;
+                }
+                h2{
+                    font-size:1.25vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                    color: #555;
+                    padding-top: $base-font-padding - 10px;
+                    line-height: 3.5vh;
+                }
+                h3{
+                    font-size:1.3vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                    padding-top: $base-padding + 200px;
+                    color: $base-color;
+                }
+                h4{
+                    font-size:1.3vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                    color: #555;
+                    padding-top: 10px;
+                }
+                ul{
+                    display:flex;
+
+                    li{
+                        width: 2.5vw; height: 2.5vh;
+                        line-height: 2.5vh;
+                        cursor: pointer;
+                        text-align: center;
+                        border-radius: 20px; border: 1px solid $base-color;
+                        margin-right: 1%;
+                        font-size:0.7vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                        margin-top: $base-font-padding;
+                    }
+                }
+                .active3{
+                    background-color: $base-color;
+                    color: #fff;
+                }
+            }
+
+
+            &-picture{
+                width: 21%; height: 80%;
+                position: relative; 
+
+                #phone{
+                    width: 25vw;
+                    position: absolute; z-index: 999;
+                }
+
+                #snmp1{
+                    display: flex;
+
+                    li{
+
+                        .test,
+                        .test2,
+                        .test3,
+                        .test4{
+                            width: 14.8vw; height: 32.6vw;
+                            position:relative; left: 34%; top: 8%;
+
+                        }
+                    }
+                }
+            }
+        }
+        
+        &-more2,
+        &-more3{
+            display:none;
+        }
+
+    }
+
+    &-ten{
+        width: 100%; height:495.36px;
+        background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/review-bg.7113d143354a257d6ddad264072b913e.png);
+        background-size:cover;
+        position:relative;
+        display: flex; flex-flow: column; align-items: flex-end;
+
+
+        &-img{
+            width:100%; height: auto;
+          
+            img{
+                width:508px; height: 503px;
+                position:absolute; left:20%; bottom:20%;
+            }
+        }
+        &-text{
+            width: 40%; height: auto;
+            padding-top: $base-padding;
+
+            h1{
+                font-size:2.6vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                color: $base-color;
+                padding-top: 20px;
+            }
+            h2{
+                font-size:1.25vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                color: #555;
+                padding-top: $base-font-padding - 10px;
+                line-height: 3.5vh;
+            }
+        }
+    }
+
+    &-eleven{
+        width:100%; height: auto;
+        background-color: #ffeb60;
+        padding-bottom: $base-font-padding;
+
+        &-text{
+
+            h1{
+                font-size:2.6vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                color: $base-color;
+                padding-top: $base-font-padding + 60px; padding-bottom: $base-padding - 10px;
+                text-align: center;
+            }
+        }
+
+        &-accordion{
+            width: 80%; height: auto;
+            margin: 0 auto;
+            overflow: auto;
+            display: block;
+
+            section{
+                width: 60%; max-height: 2vh;
+                display: block;
+                overflow: hidden;
+                background-color: #fff;
+                padding: 20px;
+                margin: 15px auto;
+                border-radius: 20px;
+                box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+                cursor: pointer;
+                position:relative;
+                transition: all 1s ease;
+
+                h1{
+                    font-size:1.2vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                    color: $base-color;
+
+                    a{
+                        color: $base-color;
+                    }
+                }
+
+                p{
+                    font-size:0.9vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                    padding-top: 20px;
+                    color: #555555;
+                    transition: all 1s ease;
+                }
+
+                &:target{
+                    max-height: 20vh;
+                }
+            }
+        }
+    }
+
+    footer{
+        width: 100%; height: 30vh;
+
+        .footer-1{
+            width: 70%; height: auto;
+            display: flex; justify-content: space-between;
+            margin:0 auto;
+            padding-top: $base-font-padding;
+
+            h1{
+                font-size:0.9vw; font-family: 'Pretendard-Regular'; font-weight: bold;
+                color: $base-color;
+            }
+            img{
+                width:1.3vw;
+            }
+        }
+
+        .footer-2{
+            width: 70%; height: auto;
+            margin:0 auto;
+            display: block;
+            overflow: auto;
+            padding-top: $base-font-padding;
+
+            h1,
+            p{
+                font-size:0.7vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                
+                a,
+                p{
+                    color: #a5a5a5;
+                }
+            }
+
+            section{
+                width: 70%; max-height: 1.5vh;
+                display: block;
+                overflow: hidden;
+                background-color: #fff;
+                cursor: pointer;
+                position:relative;
+                transition: all 1s ease;
+
+                &:target{
+                    max-height: 10vh;
+                }
+                p{
+                    color: #a5a5a5;
+                }
+            }
+        }
+
+        .footer-3,
+        .footer-4{
+            width: 70%; height: auto;
+            margin:0 auto;
+
+            p{
+                font-size:0.71vw; font-family: 'Pretendard-Regular'; font-weight: normal;
+                color: #6f6f6f;
+                padding-top: $base-font-padding;
             }
         }
     }
