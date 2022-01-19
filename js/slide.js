@@ -1,15 +1,19 @@
 $(document).ready(function(){
-    var lis = document.getElementById("snmt1");
-    var lisNum = lis.getElementsByTagName("li");
-    lisNum = 0;
+    var lis,
+        lisNum;
+        imgLis,
+        imgLisNum
 
-    const imgLis = document.getElementById("snmp1");
-    const imgLisNum = imgLis.getElementsByTagName("li");
+    lis = document.getElementById("snmt1");
+    lisNum = lis.children();
+    imgLis = document.getElementById("snmp1");
+    imgLisNum = imgLis.children();
 
-        for(var i=0; i<lisNum.length; i++){
-            lisNum.onclick = function(){
-                alert(i)
+    for(var i=0; i<lisNum.length; i++){
+        lisNum[i].addEventListener("click", function(){
+            for(var j=0; j<imgLisNum.length; j++){
+                imgLisNum[j].style.left = "-200px";
             }
-        }
-
+        });
+    }
 });
