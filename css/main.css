@@ -1178,7 +1178,7 @@ body {
 }
 
 .section-nine-more1-text, .section-nine-more2-text, .section-nine-more3-text {
-  width: 40%;
+  width: 60%;
   height: 100%;
   padding-left: 40px;
 }
@@ -1256,7 +1256,9 @@ body {
 .section-nine-more1-picture, .section-nine-more2-picture, .section-nine-more3-picture {
   width: 21%;
   height: 80%;
-  position: relative;
+  position: absolute;
+  left: 60%;
+  overflow: hidden;
 }
 
 .section-nine-more1-picture #phone, .section-nine-more2-picture #phone, .section-nine-more3-picture #phone {
@@ -1265,27 +1267,55 @@ body {
   z-index: 999;
 }
 
-.section-nine-more1-picture #snmp1, .section-nine-more2-picture #snmp1, .section-nine-more3-picture #snmp1 {
+.section-nine-more1-picture #snmp1,
+.section-nine-more1-picture #snmp2,
+.section-nine-more1-picture #snmp3, .section-nine-more2-picture #snmp1,
+.section-nine-more2-picture #snmp2,
+.section-nine-more2-picture #snmp3, .section-nine-more3-picture #snmp1,
+.section-nine-more3-picture #snmp2,
+.section-nine-more3-picture #snmp3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  left: -47%;
+  top: 5%;
 }
 
-.section-nine-more1-picture #snmp1 li .test,
-.section-nine-more1-picture #snmp1 li .test2,
-.section-nine-more1-picture #snmp1 li .test3,
-.section-nine-more1-picture #snmp1 li .test4, .section-nine-more2-picture #snmp1 li .test,
-.section-nine-more2-picture #snmp1 li .test2,
-.section-nine-more2-picture #snmp1 li .test3,
-.section-nine-more2-picture #snmp1 li .test4, .section-nine-more3-picture #snmp1 li .test,
-.section-nine-more3-picture #snmp1 li .test2,
-.section-nine-more3-picture #snmp1 li .test3,
-.section-nine-more3-picture #snmp1 li .test4 {
+.section-nine-more1-picture #snmp1 li,
+.section-nine-more1-picture #snmp2 li,
+.section-nine-more1-picture #snmp3 li, .section-nine-more2-picture #snmp1 li,
+.section-nine-more2-picture #snmp2 li,
+.section-nine-more2-picture #snmp3 li, .section-nine-more3-picture #snmp1 li,
+.section-nine-more3-picture #snmp2 li,
+.section-nine-more3-picture #snmp3 li {
+  position: relative;
+  left: 25%;
+  bottom: 5%;
+}
+
+.section-nine-more1-picture #snmp1 li img,
+.section-nine-more1-picture #snmp1 li video,
+.section-nine-more1-picture #snmp2 li img,
+.section-nine-more1-picture #snmp2 li video,
+.section-nine-more1-picture #snmp3 li img,
+.section-nine-more1-picture #snmp3 li video, .section-nine-more2-picture #snmp1 li img,
+.section-nine-more2-picture #snmp1 li video,
+.section-nine-more2-picture #snmp2 li img,
+.section-nine-more2-picture #snmp2 li video,
+.section-nine-more2-picture #snmp3 li img,
+.section-nine-more2-picture #snmp3 li video, .section-nine-more3-picture #snmp1 li img,
+.section-nine-more3-picture #snmp1 li video,
+.section-nine-more3-picture #snmp2 li img,
+.section-nine-more3-picture #snmp2 li video,
+.section-nine-more3-picture #snmp3 li img,
+.section-nine-more3-picture #snmp3 li video {
   width: 14.8vw;
   height: 32.6vw;
-  position: relative;
-  left: 34%;
-  top: 8%;
+}
+
+.section-nine-more1-picture #snmp3, .section-nine-more2-picture #snmp3, .section-nine-more3-picture #snmp3 {
+  left: -30%;
 }
 
 .section-nine-more2, .section-nine-more3 {

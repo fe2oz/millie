@@ -727,7 +727,7 @@ $base-padding: 80px;
             display: flex; flex-flow: column wrap; justify-content: center; align-content: center;
 
             &-text{
-                width: 40%; height: 100%;
+                width: 60%; height: 100%;
                 padding-left: $base-font-padding + 10px;
 
                 img{
@@ -775,33 +775,38 @@ $base-padding: 80px;
                 .active5{
                     background-color: $base-color;
                     color: #fff;
+
                 }
             }
 
 
             &-picture{
                 width: 21%; height: 80%;
-                position: relative; 
+                position: absolute; left: 60%;
+                overflow:hidden;
 
                 #phone{
                     width: 25vw;
                     position: absolute; z-index: 999;
                 }
 
-                #snmp1{
+                #snmp1,
+                #snmp2,
+                #snmp3{
                     display: flex;
+                    position:absolute; left: -47%; top:5%;
 
                     li{
+                        position:relative; left: 25%; bottom:5%;
 
-                        .test,
-                        .test2,
-                        .test3,
-                        .test4{
+                        img,
+                        video{
                             width: 14.8vw; height: 32.6vw;
-                            position:relative; left: 34%; top: 8%;
-
                         }
                     }
+                }
+                #snmp3{
+                    left: -30%;
                 }
             }
         }
