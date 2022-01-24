@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+$base-background: #a7a39a;
+$base-color: #242424;
+$base-min-color: #555;
+$base-font-padding: 30px;
+$base-padding: 80px;
+
+a{
+    color: black;
+}
+
+#slider{
+    width: 100%; height: 70vh;
+    position:relative;
+    display: flex; flex-flow: column; justify-content: center;
+
+    &-book{
+        width: 80%; height: auto;
+        margin: 0 auto;
+        display:flex; justify-content: center;
+        padding-top: $base-font-padding + 30px;
+
+        &-image{
+            width: 30%; height: 100%;
+
+            img{
+                width: 80%; height: 100%;
+            }
+        }
+
+        &-show{
+            width: 50%; height: auto;
+            display: flex; flex-flow: column; justify-content: center;
+
+            ul{
+                height: 6vh;
+                display: flex; justify-content: space-evenly; align-content: center;
+                border-bottom: 1px solid #ccc;
+
+                li{
+                    font-family: 'Pretendard-Regular'; font-size: 0.8vw;
+                    line-height: 6vh;
+                }
+            }
+            h1{
+                font-family: 'Pretendard-Regular'; font-size: 1.4vw;
+                padding-top: $base-font-padding;
+
+                span{
+                    font-size: 0.77vw; font-weight: normal;
+                }
+            }
+            h2{
+                font-family: 'Pretendard-Regular'; font-size: 0.8vw; font-weight: normal;
+                padding-top: $base-font-padding - 10px;
+
+                span{
+                    text-decoration: line-through;
+                    color: #888;
+                }
+            }
+            h3{
+                font-family: 'Pretendard-Regular'; font-size: 1.3vw;
+                color: #a20000;
+            }
+            h4{
+                font-family: 'Pretendard-Regular'; font-size: 0.9vw; font-weight: normal;
+                padding-top: $base-font-padding - 10px;
+            }
+            h5{
+                font-family: 'Pretendard-Regular'; font-size: 0.9vw; font-weight: normal;
+                padding-top: $base-font-padding - 20px;
+                display: flex; align-items: center;
+
+                button{
+                    width: 1.5vw; height: 2.7vh;
+                    background: transparent;
+                    border: 1px solid #ccc;
+                    font-family: 'Pretendard-Regular'; font-size: 0.6vw;
+                    color: #888;
+                    cursor: pointer;
+
+                    &:nth-of-type(1){
+                        margin-left: 2%;
+                    }
+                }
+                input{
+                    width: 1.5vw; height: 2.5vh;
+                    text-align: center;
+                    font-family: 'Pretendard-Regular'; font-size: 0.6vw;
+                    color: #888;
+                    border: 1px solid #ccc;
+                }
+            }
+            h6{
+                display: flex; align-items: center;
+                padding-top: $base-font-padding;
+
+                button{
+                    width: 6.5vw; height: 4.4vh;
+                    cursor: pointer;
+                    border: 0;
+                    font-family: 'Pretendard-Regular'; font-size: 0.8vw;
+                    
+                    &:not(:last-child){
+                        margin-right: 1%;
+                    }
+                    &:nth-of-type(1){
+                        background-color: $base-color;
+                        color: white;
+                    }
+                    &:nth-of-type(2){
+                        background-color: #ffeb60;
+                        color: $base-color;
+                    }
+                    &:nth-of-type(3){
+                        background-color: #fff;
+                        border: 1px solid #888;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section{
+    width: 100%; height: auto;
+
+    &-one{
+        width: 80%; height: auto;
+        margin: 0 auto;
+        display: flex; flex-flow: column; align-content: center;
+
+        #so1{
+            height: 6vh;
+            display: flex; justify-content: center;
+            border-bottom: 1px solid #888;
+
+            li{
+                width: 10vw;
+                line-height:6vh;
+                text-align: center;
+                
+                a{
+                    text-align: center;
+                    font-family: 'Pretendard-Regular'; font-size: 0.9vw;
+                }
+                &.active{
+                    background-color: $base-color;
+                    
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &-two{
+        width: 80%; height: auto;
+        margin:0 auto;
+    }
+}
