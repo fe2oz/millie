@@ -27,4 +27,10 @@ $(document).ready(function(){
     });
 
 
-})
+});
+
+$(function(){
+  $.get("text/txt.txt", function(data) {
+    $(".section-two").html(data)
+  });
+});

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="scss/sub.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="section-two">
-            
+
         </div>
     </div>
 
@@ -138,5 +138,13 @@
             <p>Copyright © 2021 밀리의 서재 All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+       $(function(){
+        $.get("text/txt.txt", function(data) {
+            $(".section-two").html(data)
+        });
+        }); 
+    </script>
 </body>
 </html>
