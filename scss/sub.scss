@@ -480,22 +480,24 @@ a{
                 width: 100%;
                 display:flex;
             }
-            #s2{
-                float:left;
-            }
 
-            &-1,
-            &-2,
-            &-3,
-            &-4,
-            &-5,
-            &-6,
-            &-7,
-            &-8,
-            &-9,
-            &-10,
-            &-11,
-            &-12{
+            .slides-1-1,
+            .slides-1-2{
+                display:flex; flex-flow:row;
+                overflow: hidden;
+
+                &-1,
+                &-2,
+                &-3,
+                &-4,
+                &-5,
+                &-6,
+                &-7,
+                &-8,
+                &-9,
+                &-10,
+                &-11,
+                &-12{
                 width: 16.6666%;
                 display:flex; flex-flow: column; align-items: center;
                 margin-top: $base-font-padding;
@@ -513,6 +515,8 @@ a{
                 }
             }
         }
+            
+    }
         
         #prev{
             transform: rotate(180deg);

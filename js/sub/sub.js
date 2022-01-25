@@ -47,8 +47,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-1").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-1").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-1-1").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-1-1").append("<span>"+msg.documents[0].title+"</span>");
         });
 
     $.ajax({
@@ -60,8 +60,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-2").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-2").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-1-2").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-1-2").append("<span>"+msg.documents[0].title+"</span>");
         });
 
     $.ajax({
@@ -73,10 +73,10 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-3").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-3").append("<span>"+msg.documents[0].title+"</span>");
-            $(".slides-1-4").append("<img src="+msg.documents[1].thumbnail+"/>");
-            $(".slides-1-4").append("<span>"+msg.documents[1].title+"</span>");
+            $(".slides-1-1-3").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-1-3").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-1-4").append("<img src="+msg.documents[1].thumbnail+"/>");
+            $(".slides-1-1-4").append("<span>"+msg.documents[1].title+"</span>");
         });
 
     $.ajax({
@@ -88,8 +88,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-5").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-5").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-1-5").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-1-5").append("<span>"+msg.documents[0].title+"</span>");
         });
     
     $.ajax({
@@ -101,8 +101,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-6").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-6").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-1-6").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-1-6").append("<span>"+msg.documents[0].title+"</span>");
         });
 
     $.ajax({
@@ -210,8 +210,15 @@ $(document).ready(function(){
 
     function next(){
       var slidesOne_value = $("#s1").width();
-      $(".slides-1 ul:first").stop().animate({marginLeft:-slidesOne_value}, function(){
-        $(".slides-1 ul:last").appendTo(".slides-1");
+      $(".slides-1 ul").stop().animate({marginLeft:-slidesOne_value}, function(){
+        $(".slides-1 ul li:first").appendTo(".slides-1");
+      });
+    }
+
+    function prev(){
+      var slidesOne_value = $("#s1").width();
+      $(".slides-1 ul:first").stop().animate({marginLeft:+slidesOne_value}, function(){
+        $(".slides-1 ul:last").prependTo(".slides-1");
       });
     }
 });
