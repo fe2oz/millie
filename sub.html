@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="scss/sub.css">
+    <link rel="stylesheet" href="css/sub.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -79,10 +79,13 @@
             <nav>
                 <ul id="so1">
                     <li class="active">
-                        <a href="#">책정보</a>
+                        <a href="#section-two">책정보</a>
                     </li>
                     <li>
-                        <a href="#">추천도서</a>
+                        <a href="#ten">이벤트/기획전</a>
+                    </li>
+                    <li>
+                        <a href="#ten">추천도서</a>
                     </li>
                     <li>
                         <a href="#">기대평/리뷰</a>
@@ -94,8 +97,113 @@
             </nav>
         </div>
 
-        <div class="section-two">
+        <div class="section-two" id="section-two"></div>
 
+        <div class="section-three">
+            <div class="seven">
+                <div class="seven-1">
+                    <h1>저자의 다른책</h1>
+                    <h2>전체 보기 > </h2>
+                </div>
+
+                <div class="seven-2">
+                    <div class="seven-2-1"></div>
+                    <div class="seven-2-2"></div>
+                    <div class="seven-2-3"></div>
+                    <div class="seven-2-4"></div>
+                    <div class="seven-2-5"></div>
+                    <div class="seven-2-6"></div>
+                </div>
+            </div>
+
+            <div class="eight">
+                <div class="eight-1">
+                    <h1>윤희기 [역]</h1>
+                    <div class="eight-1-1">
+                        <span>신작알림 SMS신청 ></span>
+                        <span>작가DB보기 ></span>
+                    </div>
+                </div>
+
+                <div class="eight-2">
+                    <div class="eight-2-1">
+                        <span>생년월일</span>
+                        <span>-</span>
+                    </div>
+
+                    <div class="eight-2-2">
+                        해당작가에 대한 소개가 없습니다.
+                    </div>
+                </div>
+            </div>
+
+            <div class="nine">
+
+                <h1>상품정보제공고시</h1>
+
+                <div class="" id="nine">
+                    <div class="nine-1">
+                        <div class="nine-1-1">
+                            <p>저자</p>
+                            <p>ISBN</p>
+                            <p>크기</p>
+                            <p>발행일(출간일)</p>
+                        </div>
+                        <div class="nine-1-2">
+                            <p>오스카 와일드</p>
+                            <p>9788932911526(8932911525)</p>
+                            <p>128*188*30</p>
+                            <p>2010년 12월01일</p>
+                        </div>
+                    </div>
+    
+                    <div class="nine-2">
+                        <div class="nine-2-1">
+                            <p>기획사/제작사</p>
+                            <p>쪽수</p>
+                            <p>제품구성</p>
+                            <p>목차 또는 책소개</p>
+                        </div>
+                        <div class="nine-2-2">
+                            <p>열린책들</p>
+                            <p>362쪽</p>
+                            <span>공급업체 특성상 정보확인이 어려우니, 정확한 정보를 확인하시려면 1:1문의게시판을 이용 바랍니다.</span>
+                            <span>상품 상세 정보를 확인하시고, 정보확인이 어려우시면 1:1문의 게시판을 이용 바랍니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ten" id="ten">
+                <h1>이벤트 기획전</h1>
+                <img src="http://bimage.interpark.com/milti/renewPark/main/64631_202112301256114731.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="section-four">
+            <h1>소설 분야에서 많은 회원이 구매한 책</h1>
+
+            <div class="slides-1">
+                <ul id="s1">
+                    <li class="slides-1-1"></li>
+                    <li class="slides-1-2"></li>
+                    <li class="slides-1-3"></li>
+                    <li class="slides-1-4"></li>
+                    <li class="slides-1-5"></li>
+                    <li class="slides-1-6"></li>
+                </ul>
+
+                <ul id="s2">
+                    <li class="slides-1-7"></li>
+                    <li class="slides-1-8"></li>
+                    <li class="slides-1-9"></li>
+                    <li class="slides-1-10"></li>
+                    <li class="slides-1-11"></li>
+                    <li class="slides-1-12"></li> 
+                </ul>
+            </div>
+            <img id="next" src="img/3994400_arrow_forward_navigation_next_right_icon.png" alt="">
+            <img id="prev" src="img/3994400_arrow_forward_navigation_next_right_icon.png" alt="">
         </div>
     </div>
 
@@ -141,9 +249,9 @@
 
     <script>
        $(function(){
-        $.get("text/txt.txt", function(data) {
-            $(".section-two").html(data)
-        });
+            $.get("text/txt.txt", function(data) {
+                $(".section-two").html(data)
+            });
         }); 
     </script>
 </body>
