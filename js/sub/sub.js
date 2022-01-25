@@ -114,8 +114,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-7").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-7").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-2-7").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-2-7").append("<span>"+msg.documents[0].title+"</span>");
         });
 
     $.ajax({
@@ -127,8 +127,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-8").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-8").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-2-8").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-2-8").append("<span>"+msg.documents[0].title+"</span>");
         });
 
     $.ajax({
@@ -140,8 +140,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-9").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-9").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-2-9").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-2-9").append("<span>"+msg.documents[0].title+"</span>");
         });
 
     $.ajax({
@@ -153,8 +153,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-10").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-10").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-2-10").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-2-10").append("<span>"+msg.documents[0].title+"</span>");
         });
 
      $.ajax({
@@ -166,8 +166,8 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-11").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-11").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-2-11").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-2-11").append("<span>"+msg.documents[0].title+"</span>");
         });
 
     $.ajax({
@@ -179,8 +179,112 @@ $(document).ready(function(){
         .done(function( msg ) {
             console.log(msg);
 
-            $(".slides-1-12").append("<img src="+msg.documents[0].thumbnail+"/>");
-            $(".slides-1-12").append("<span>"+msg.documents[0].title+"</span>");
+            $(".slides-1-2-12").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-1-2-12").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"죄와 벌"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-1-1").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-1-1").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"셰익스피어"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-1-2").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-1-2").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"연금술사"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-1-3").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-1-3").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"만년"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-1-4").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-1-4").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"사양"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-1-5").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-1-5").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"웃음과 망각"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-1-6").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-1-6").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"카라마조프"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-2-7").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-2-7").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"안나 카레니나"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-2-8").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-2-8").append("<span>"+msg.documents[0].title+"</span>");
         });
 });
 
@@ -208,18 +312,43 @@ $(document).ready(function(){
       prev();
     });
 
+    $("#next1").click(function(){
+      nextOne();
+    });
+    $("#prev1").click(function(){
+      prevTwo();
+    });
+
     function next(){
-      var slidesOne_value = $("#s1").width();
-      $(".slides-1 ul").stop().animate({marginLeft:-slidesOne_value}, function(){
-        $(".slides-1 ul li:first").appendTo(".slides-1");
+      var slidesOne_value = $(".slides-1-1").width();
+      $("#s1").stop().animate({marginLeft: -slidesOne_value}, 800, function(){
+        $("#s1 li:first").appendTo("#s1");
+        $("#s1").css({marginLeft:0})
       });
     }
 
     function prev(){
-      var slidesOne_value = $("#s1").width();
-      $(".slides-1 ul:first").stop().animate({marginLeft:+slidesOne_value}, function(){
-        $(".slides-1 ul:last").prependTo(".slides-1");
+      var slidesOne_value = $(".slides-1-2").width();
+      $("#s1 li:last").prependTo("#s1");
+      $("#s1").css({marginLeft: -slidesOne_value});
+      $("#s1").stop().animate({marginLeft:0}, 800)
+    }
+
+    function nextOne(){
+      var slidesOne_value = $(".slides-1-1").width();
+      $("#s2").stop().animate({marginLeft: -slidesOne_value}, 800, function(){
+        $("#s2 li:first").appendTo("#s2");
+        $("#s2").css({marginLeft:0})
       });
     }
+
+    function prevTwo(){
+      var slidesOne_value = $(".slides-1-2").width();
+      $("#s2 li:last").prependTo("#s2");
+      $("#s2").css({marginLeft: -slidesOne_value});
+      $("#s2").stop().animate({marginLeft:0}, 800)
+    }
+
+    
 });
 

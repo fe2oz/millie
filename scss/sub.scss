@@ -457,7 +457,9 @@ a{
         }
     }
 
-    &-four{
+    &-four,
+    &-five,
+    &-six{
         width: 60%; height: auto;
         margin:0 auto; margin-top: $base-font-padding + 20px;
         font-family: 'Pretendard-Regular'; 
@@ -470,19 +472,26 @@ a{
             border-bottom: 1px solid #888;
         }
 
-        .slides-1{
-            height: auto;
+        .slides-1,
+        .slides-2{
+            width: 100%; height: auto;
             position:relative;
             overflow: hidden;
             display:flex;
 
-            ul{
-                width: 100%;
+            #s1,
+            #s2,
+            #s3{
+                width: 200%;
                 display:flex;
-            }
 
             .slides-1-1,
-            .slides-1-2{
+            .slides-1-2,
+            .slides-2-1,
+            .slides-2-2,
+            .slides-3-1,
+            .slides-3-2{
+                width: 100%;
                 display:flex; flex-flow:row;
                 overflow: hidden;
 
@@ -498,13 +507,13 @@ a{
                 &-10,
                 &-11,
                 &-12{
-                width: 16.6666%;
-                display:flex; flex-flow: column; align-items: center;
-                margin-top: $base-font-padding;
+                    width: 16.6666%;
+                    display:flex; flex-flow: column; align-items: center;
+                    margin-top: $base-font-padding;
 
                 img{
                     width: 6.5vw; height: 10vw;
-                }
+                    }
                 span{
                     width: 90%;
                     overflow:hidden;
@@ -512,20 +521,26 @@ a{
                     white-space: nowrap;
                     padding-top: $base-font-padding - 15px;
                     text-align: center;
+                    }
                 }
             }
-        }
-            
+        } 
     }
         
-        #prev{
+        #prev,
+        #prev1,
+        #prev2{
             transform: rotate(180deg);
             left:-3%;
         }
-        #next{
+        #next,
+        #next1,
+        #next2{
             right:-3%;
         }
-        #next, #prev{
+        #next, #prev,
+        #next1, #prev1,
+        #next2, #prev2{
             position:absolute; bottom:35%;
             cursor: pointer;
         }
