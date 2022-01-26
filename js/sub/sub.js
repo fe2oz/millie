@@ -286,6 +286,214 @@ $(document).ready(function(){
             $(".slides-2-2-8").append("<img src="+msg.documents[0].thumbnail+"/>");
             $(".slides-2-2-8").append("<span>"+msg.documents[0].title+"</span>");
         });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"1984"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-2-9").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-2-9").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"셰익스피어"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-2-10").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-2-10").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"만년"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-2-11").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-2-2-11").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"사양"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-2-2-12").append("<img src="+msg.documents[2].thumbnail+"/>");
+            $(".slides-2-2-12").append("<span>"+msg.documents[2].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"오스카 와일드 작품선"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-1-1").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-1-1").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"거인의 포트폴리오"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-1-2").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-1-2").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"시크릿"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-1-3").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-1-3").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"불변사를 철저하게"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-1-4").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-1-4").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"영어 전치사"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-1-5").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-1-5").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"미국 영어발음"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-1-6").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-1-6").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"세진 쌤의"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-2-7").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-2-7").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"The House on"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-2-8").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-2-8").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"가치 투자의"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-2-9").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-2-9").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"마우스 브리더"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-2-10").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-2-10").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"멀리 나는 새는 집이"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-2-11").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-2-11").append("<span>"+msg.documents[0].title+"</span>");
+        });
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"앉은뱅이꽃"},
+        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+      })
+        .done(function( msg ) {
+            console.log(msg);
+
+            $(".slides-3-2-12").append("<img src="+msg.documents[0].thumbnail+"/>");
+            $(".slides-3-2-12").append("<span>"+msg.documents[0].title+"</span>");
+        });
 });
 
 $(document).ready(function(){
@@ -296,13 +504,46 @@ $(document).ready(function(){
 
     $(document).scroll(function(){
       var scroll_value = $(this).scrollTop();
-        if(scroll_value > 6000){
-          $("#so1 li:nth-of-type(2)").addClass("active");
-          $("#so1 li:nth-of-type(1)").removeClass("active");
-        }else{
+        if(scroll_value > 0){ //책정보
           $("#so1 li:nth-of-type(1)").addClass("active");
           $("#so1 li:nth-of-type(2)").removeClass("active");
+          $("#so1 li:nth-of-type(3)").removeClass("active");
+          $("#so1 li:nth-of-type(4)").removeClass("active");
+          $("#so1 li:nth-of-type(5)").removeClass("active");
         }
+
+        if(scroll_value > 5600){ //이벤트 기획전
+          $("#so1 li:nth-of-type(2)").addClass("active");
+          $("#so1 li:nth-of-type(1)").removeClass("active");
+          $("#so1 li:nth-of-type(3)").removeClass("active");
+          $("#so1 li:nth-of-type(4)").removeClass("active");
+          $("#so1 li:nth-of-type(5)").removeClass("active");
+        }
+
+        if(scroll_value > 6000){ // 추천도서
+          $("#so1 li:nth-of-type(3)").addClass("active");
+          $("#so1 li:nth-of-type(1)").removeClass("active");
+          $("#so1 li:nth-of-type(2)").removeClass("active");
+          $("#so1 li:nth-of-type(4)").removeClass("active");
+          $("#so1 li:nth-of-type(5)").removeClass("active");
+        }
+
+        if(scroll_value > 7000){ // 리뷰
+          $("#so1 li:nth-of-type(4)").addClass("active");
+          $("#so1 li:nth-of-type(1)").removeClass("active");
+          $("#so1 li:nth-of-type(2)").removeClass("active");
+          $("#so1 li:nth-of-type(3)").removeClass("active");
+          $("#so1 li:nth-of-type(5)").removeClass("active");
+        }
+
+        if(scroll_value > 7800){ // 리뷰
+          $("#so1 li:nth-of-type(5)").addClass("active");
+          $("#so1 li:nth-of-type(1)").removeClass("active");
+          $("#so1 li:nth-of-type(2)").removeClass("active");
+          $("#so1 li:nth-of-type(3)").removeClass("active");
+          $("#so1 li:nth-of-type(4)").removeClass("active");
+        }
+
     });
 
     $("#next").click(function(){
@@ -317,6 +558,13 @@ $(document).ready(function(){
     });
     $("#prev1").click(function(){
       prevTwo();
+    });
+
+    $("#next2").click(function(){
+      nextTwo();
+    });
+    $("#prev2").click(function(){
+      prevThree();
     });
 
     function next(){
@@ -349,6 +597,20 @@ $(document).ready(function(){
       $("#s2").stop().animate({marginLeft:0}, 800)
     }
 
-    
+    function nextTwo(){
+      var slidesOne_value = $(".slides-1-1").width();
+      $("#s3").stop().animate({marginLeft: -slidesOne_value}, 800, function(){
+        $("#s3 li:first").appendTo("#s3");
+        $("#s3").css({marginLeft:0})
+      });
+    }
+
+    function prevThree(){
+      var slidesOne_value = $(".slides-1-2").width();
+      $("#s3 li:last").prependTo("#s3");
+      $("#s3").css({marginLeft: -slidesOne_value});
+      $("#s3").stop().animate({marginLeft:0}, 800)
+    }
+
 });
 

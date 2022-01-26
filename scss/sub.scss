@@ -6,8 +6,10 @@ $base-min-color: #555;
 $base-font-padding: 30px;
 $base-padding: 80px;
 
-html{
-    scroll-behavior: smooth;
+:root{
+    --basic-width: 60%;
+    --basic-height: auto;
+    --basic-line: 2.1vh;
 }
 
 a{
@@ -20,8 +22,8 @@ a{
     display: flex; flex-flow: column; justify-content: center;
 
     &-book{
-        width: 80%; height: auto;
-        margin: 0 auto;
+        width: 80%; height: var(--basic-height);
+        margin:0 auto;
         display:flex; justify-content: center;
         padding-top: $base-font-padding + 30px;
 
@@ -77,7 +79,7 @@ a{
                 padding-top: $base-font-padding - 20px;
                 display: flex; align-items: center;
 
-                button{
+                .button{
                     width: 1.5vw; height: 2.7vh;
                     background: transparent;
                     border: 1px solid #ccc;
@@ -150,6 +152,7 @@ a{
                 a{
                     text-align: center;
                     font-family: 'Pretendard-Regular'; font-size: 0.9vw;
+                    padding: 2vw;
                 }
                 &.active{
                     background-color: $base-color;
@@ -167,6 +170,7 @@ a{
         margin:0 auto;
         font-family: 'Pretendard-Regular'; 
         color: $base-color;
+        margin-top: $base-font-padding + 30px;
 
         p{
             color: black;
@@ -174,11 +178,7 @@ a{
         }
         span{
             color: #555;
-            line-height: 2.5vh;
 
-            &:nth-of-type(1){
-                padding-top: $base-font-padding - 10px;
-            }
         }
 
         h1, h2, h3, h4, h5, h6{
@@ -194,18 +194,27 @@ a{
 
             span{
                 font-size: 0.8vw;
-                color: #555;
+                color: $base-min-color;
+                padding-top: $base-font-padding;
             }
         }
         .two{
             height: 25vh;
             display: flex; flex-flow:column; justify-content: center;
             margin-bottom: $base-font-padding;
+
+            span{
+                font-size: 0.8vw;
+                color: $base-min-color;
+                padding-top: $base-font-padding;
+                line-height: var(--basic-line);
+            }
         }
         .three{
             height: auto;
             display: flex; flex-flow:column; justify-content: center;
             margin-bottom: $base-font-padding;
+
             h3{
                 font-size: 1.4vw;
                 padding-bottom: $base-font-padding - 10px;
@@ -213,14 +222,34 @@ a{
             p:nth-of-type(1){
                 padding-top: $base-font-padding;
             }
+            span{
+                font-size: 0.8vw;
+                color: $base-min-color;
+                padding-top: $base-font-padding;
+                line-height: var(--basic-line);
+            }
         }
         .four{
             height: 20vh;
             display: flex; flex-flow:column; justify-content: center;
             margin-bottom: $base-font-padding;
+
+            span{
+                font-size: 0.8vw;
+                color: $base-min-color;
+                padding-top: $base-font-padding;
+                line-height: var(--basic-line);
+            }
         }
         .five{
             margin-bottom: $base-font-padding;
+
+            span{
+                font-size: 0.8vw;
+                color: $base-min-color;
+                padding-top: $base-font-padding;
+                line-height: var(--basic-line);
+            }
         }
         .six{
             &-1{
@@ -237,7 +266,7 @@ a{
             }
             &-2{
                 width: 20%;
-                display: flex; justify-content: space-evenly;
+                display: flex; align-items: center; justify-content: space-evenly;
 
                 span{
                     font-size: 0.7vw;
@@ -252,10 +281,21 @@ a{
                 width: 20%;
                 display: flex; justify-content: space-between; align-items: center;
                 padding: $base-font-padding - 5px;
+
+                span{
+                    font-size: 0.8vw;
+                    color: $base-min-color;
+                }
             }
             &-5{
                 width: 80%;
                 padding: $base-font-padding - 5px;
+
+                span{
+                    font-size: 0.8vw;
+                    color: $base-min-color;
+                    line-height: var(--basic-line);
+                }
             }
         }
     }
@@ -473,7 +513,8 @@ a{
         }
 
         .slides-1,
-        .slides-2{
+        .slides-2,
+        .slides-3{
             width: 100%; height: auto;
             position:relative;
             overflow: hidden;
@@ -543,6 +584,110 @@ a{
         #next2, #prev2{
             position:absolute; bottom:35%;
             cursor: pointer;
+        }
+    }
+
+    &-seven{
+        width: 60%; height: auto;
+        margin:0 auto;
+        font-family: 'Pretendard-Regular';
+        display: flex; justify-content: space-between;
+        margin-top: $base-font-padding + 30px;
+        border-bottom: 1px solid black;
+        padding-bottom: $base-font-padding;
+
+        div{
+            height: 3vh;
+            display: flex; align-items: center;
+
+            &:nth-of-type(2){
+                width: 5vw;
+                background: #ffeb60;
+                padding: 5px;
+                text-align: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+        h1, h2{
+            font-size: 1.2vw; 
+        }
+        h2{
+            padding-left: $base-font-padding - 10px;
+        }
+        h3{
+            font-size: 0.8vw; font-weight: normal;
+            line-height: 0.8vw;
+            padding-left: 1em;
+        }
+    }
+
+    &-eight,
+    &-nine,
+    &-ten,
+    &-eleven,
+    &-twelve,
+    &-thirteen{
+        width: 60%; height: auto;
+        margin:0 auto;
+        font-family: 'Pretendard-Regular';
+        border-bottom: 1px solid #ddd;
+        color: #444;
+
+        .read-more-state{
+            display: none;
+
+            &:checked ~ .read-more-wrap .read-more-target{
+                display:block;
+                font-size: inherit;
+                max-height: 999em;
+            }
+            &:checked ~ .read-more-wrap .sample{
+                display: none;
+            }
+        }
+        .read-more-target{
+            display:none;
+            max-height:0;
+            font-size:0;
+            transition: .25s ease;
+        }
+        .read-more-trigger:before{
+            content:"펼쳐보기 >"
+        }
+        .read-more-state:checked ~ .read-more-trigger:before{
+            content:"접어보기 <"
+        }
+        .read-more-trigger{
+            cursor: pointer;
+            display: inline-block;
+            color: #666;
+            font-size: 0.7vw;
+            padding: 1em;
+        }
+        .read-more-wrap{
+            padding: 1em;
+            line-height: 2.3vh;
+        }
+    }
+
+    &-fourteen{
+        width: 60%; height: auto;
+        margin: 0 auto; margin-top: $base-font-padding + 30px;
+        font-family: 'Pretendard-Regular';
+
+        h1{
+            width:100%;
+            font-size: 1.2vw;
+            padding-bottom: $base-font-padding - 10px;
+            border-bottom: 1px solid #888;
+        }
+
+        div{
+            line-height: 2.5vh;
+            color: #888;
+            padding: $base-font-padding - 10px;
+            font-size: 0.8vw;
         }
     }
 }

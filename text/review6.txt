@@ -1,0 +1,8 @@
+
+<input type="checkbox" class="read-more-state" id="post-6"/>
+
+<p class="read-more-wrap">
+댄디적 환상. 인간의 소멸. 그 다음에 무엇이 남는지 생각하시라. 현실은 차라리 초상으로 남았다. 역사의 주체는 사라지고. 단지 도리언 그래이의 환상만 인간의 흔적을 추억하게 한다.
+<span class="read-more-target"></span>
+</p>
+<label for="post-6" class="read-more-trigger"></label>

@@ -60,9 +60,9 @@
 
                 <h5>
                     주문수량 
-                    <button>-</button>
+                    <input type="button" class="button" value=" - ">
                     <input type="text" value="1">
-                    <button>+</button>
+                    <input type="button" class="button" value= " + ">
                 </h5>
 
                 <h6>
@@ -85,13 +85,13 @@
                         <a href="#ten">이벤트/기획전</a>
                     </li>
                     <li>
-                        <a href="#ten">추천도서</a>
+                        <a href="#section-four">추천도서</a>
                     </li>
                     <li>
-                        <a href="#">기대평/리뷰</a>
+                        <a href="#section-seven">리뷰</a>
                     </li>
                     <li>
-                        <a href="#">교환/환불/배송</a>
+                        <a href="#section-fourteen">배송</a>
                     </li>
                 </ul>
             </nav>
@@ -180,7 +180,7 @@
             </div>
         </div>
 
-        <div class="section-four">
+        <div class="section-four" id="section-four">
             <h1>소설 분야에서 많은 회원이 구매한 책</h1>
 
             <div class="slides-1">
@@ -241,7 +241,7 @@
         <div class="section-six">
             <h1>이 책을 구매한 회원들이 같이 본 책</h1>
 
-            <div class="slides-2">
+            <div class="slides-3">
                 <ul id="s3">
                     <li class="slides-3-1">
                         <div class="slides-3-1-1"></div>
@@ -265,6 +265,38 @@
 
             <img id="next2" src="img/3994400_arrow_forward_navigation_next_right_icon.png" alt="">
             <img id="prev2" src="img/3994400_arrow_forward_navigation_next_right_icon.png" alt="">
+        </div>
+
+        <div class="section-seven" id="section-seven">
+            <div>
+                <h1>리뷰</h1>
+                <h2>⭐⭐⭐⭐ 8.9</h2>
+                <h3>(총 6건)</h3>
+            </div>
+
+            <div>
+                리뷰작성
+            </div>
+        </div>
+
+        <div class="section-eight" id="section-eight"></div>
+        <div class="section-nine"></div>
+        <div class="section-ten"></div>
+        <div class="section-eleven"></div>
+        <div class="section-twelve"></div>
+        <div class="section-thirteen"></div>
+
+        <div class="section-fourteen">
+            <h1>배송안내</h1>
+
+            <div>
+                상품은 택배로 배송되며, 출고완료 1~2일내 상품을 받아 보실 수 있습니다.<br>
+                출고가능 시간이 서로 다른 상품을 함께 주문할 경우 출고가능 시간이 가장 긴 상품을 기준으로 배송됩니다.<br>
+                군부대, 교도소 등 특정기관은 우체국 택배만 배송가능합니다.<br>
+                배송비는 업체 배송비 정책에 따릅니다.<br>
+                - 도서 구매 시, 1만 원 이상 무료, 1만원 미만 2천 원<br>
+                - 상품별 배송비가 있는 경우, 상품별 배송비 정책 적용
+            </div>
         </div>
     </div>
 
@@ -314,6 +346,36 @@
                 $(".section-two").html(data)
             });
         }); 
+        $(function(){
+            $.get("text/review1.txt", function(data) {
+                $(".section-eight").html(data)
+            });
+        }); 
+        $(function(){
+            $.get("text/review2.txt", function(data) {
+                $(".section-nine").html(data)
+            });
+        }); 
+        $(function(){
+            $.get("text/review3.txt", function(data) {
+                $(".section-ten").html(data)
+            });
+        }); 
+        $(function(){
+            $.get("text/review4.txt", function(data) {
+                $(".section-eleven").html(data)
+            });
+        }); 
+        $(function(){
+            $.get("text/review5.txt", function(data) {
+                $(".section-twelve").html(data)
+            });
+        });
+        $(function(){
+            $.get("text/review6.txt", function(data) {
+                $(".section-thirteen").html(data)
+            });
+        });
     </script>
 </body>
 </html>
