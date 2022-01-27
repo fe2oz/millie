@@ -620,8 +620,9 @@ $(document).ready(function(){
   const target = document.getElementsByClassName("target");
 
   plus.addEventListener("click", function(){
-    let x = "1";
-    target.value += x;
+    let count = 0;
+
+    
   })
 })
 
