@@ -499,8 +499,7 @@ a{
     }
 
     &-four,
-    &-five,
-    &-six{
+    &-five{
         width: 60%; height: auto;
         margin:0 auto; margin-top: $base-font-padding + 20px;
         font-family: 'Pretendard-Regular'; 
@@ -514,25 +513,21 @@ a{
         }
 
         .slides-1,
-        .slides-2,
-        .slides-3{
+        .slides-2{
             width: 100%; height: auto;
             position:relative;
             overflow: hidden;
             display:flex;
 
             #s1,
-            #s2,
-            #s3{
+            #s2{
                 width: 200%;
                 display:flex;
 
             .slides-1-1,
             .slides-1-2,
             .slides-2-1,
-            .slides-2-2,
-            .slides-3-1,
-            .slides-3-2{
+            .slides-2-2{
                 width: 100%;
                 display:flex; flex-flow:row;
                 overflow: hidden;
@@ -570,19 +565,16 @@ a{
     }
         
         #prev,
-        #prev1,
-        #prev2{
+        #prev1{
             transform: rotate(180deg);
             left:-3%;
         }
         #next,
-        #next1,
-        #next2{
+        #next1{
             right:-3%;
         }
         #next, #prev,
-        #next1, #prev1,
-        #next2, #prev2{
+        #next1, #prev1{
             position:absolute; bottom:35%;
             cursor: pointer;
         }

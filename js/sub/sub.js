@@ -615,6 +615,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  
+  const minus = document.getElementsByClassName("minus");
+  const plus = document.getElementsByClassName("plus");
+  const target = document.getElementsByClassName("target");
+
+  plus.addEventListener("click", function(){
+    let x = "1";
+    target.value += x;
+  })
 })
 
