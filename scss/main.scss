@@ -723,7 +723,7 @@ $base-padding: 80px;
                 position: absolute; left: 60%;
                 overflow:hidden;
 
-                #phone{
+                .phoneImg{
                     width: 25vw;
                     position: absolute; z-index: 999;
                 }
@@ -824,7 +824,7 @@ $base-padding: 80px;
                 position:relative;
                 transition: all 1s ease;
 
-                h1{
+                pre{
                     font-size:1.2vw; font-family: 'Pretendard-Regular'; font-weight: bold;
                     color: $base-color;
 
