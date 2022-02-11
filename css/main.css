@@ -1045,13 +1045,13 @@ body {
   position: relative;
   transition: all 1s ease;
 }
-.section-eleven-accordion section pre {
+.section-eleven-accordion section h2 {
   font-size: 1.2vw;
   font-family: "Pretendard-Regular";
   font-weight: bold;
   color: #242424;
 }
-.section-eleven-accordion section pre a {
+.section-eleven-accordion section h2 a {
   color: #242424;
 }
 .section-eleven-accordion section p {

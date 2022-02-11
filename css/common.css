@@ -97,14 +97,14 @@ footer .footer-2 {
   overflow: auto;
   padding-top: 30px;
 }
-footer .footer-2 pre,
+footer .footer-2 h2,
 footer .footer-2 p {
   font-size: 0.7vw;
   font-family: "Pretendard-Regular";
   font-weight: normal;
 }
-footer .footer-2 pre a,
-footer .footer-2 pre p,
+footer .footer-2 h2 a,
+footer .footer-2 h2 p,
 footer .footer-2 p a,
 footer .footer-2 p p {
   color: #a5a5a5;
